@@ -25,7 +25,10 @@ if ! [[ "$VERSION" =~ ^[0-9]+\.[0-9]+(\.[0-9]+)?$ ]]; then
 fi
 
 TAG="v$VERSION"
-ZIP_NAME="AlwaysWith-$VERSION.zip"
+# Fixed name, no version in it: `releases/latest/download/AlwaysWith.zip` is then a
+# URL that never changes, which is what an unattended installer needs. The version
+# is in the tag, in the release notes and in the app's own Info.plist.
+ZIP_NAME="AlwaysWith.zip"
 CHANGELOG_PATH="CHANGELOG.md"
 RELEASE_DATE=$(date +%Y-%m-%d)
 
@@ -176,7 +179,7 @@ INSTALL_FOOTER="## Install
 
 Download \`$ZIP_NAME\`, unzip and move \`AlwaysWith.app\` to \`/Applications\`.
 
-This build is signed ad-hoc. On first launch macOS may block it as coming from an unidentified developer — right-click the app → **Open** to bypass Gatekeeper once."
+This build is signed ad-hoc, so on first launch macOS blocks it as coming from an unidentified developer. Try to open the app, click **Done**, then go to **System Settings → Privacy & Security**, scroll to *Security* and click **Open Anyway**. (The old right-click → Open trick is gone since macOS Sequoia.)"
 
 NOTES="$UNRELEASED_BODY
 

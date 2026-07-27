@@ -12,7 +12,7 @@ Two ways.
 
 ### Grab the latest release
 
-1. Download `AlwaysWith-X.Y.Z.zip` from the [Releases](https://github.com/magobaol/always-with/releases) page.
+1. Download [`AlwaysWith.zip`](https://github.com/magobaol/always-with/releases/latest/download/AlwaysWith.zip) — that URL always points at the latest release, or pick a specific one from the [Releases](https://github.com/magobaol/always-with/releases) page.
 2. Unzip and drag `AlwaysWith.app` into `/Applications`.
 3. First launch will be blocked by Gatekeeper because the binary is signed ad-hoc, not with an Apple Developer ID certificate. To get past it:
    - Try to open the app — macOS shows a "can't be opened" warning. Click **Done**.
