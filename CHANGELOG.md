@@ -4,6 +4,9 @@ All notable changes to this project are documented here. The format is based on 
 
 ## [Unreleased]
 
+### Changed
+- The release asset is now always named `AlwaysWith.zip`, so `releases/latest/download/AlwaysWith.zip` is a stable download link.
+
 ## [1.0.8] - 2026-07-01
 
 ### Added
